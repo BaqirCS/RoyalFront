@@ -1,0 +1,113 @@
+.foo {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.colorify {
+  background-color: #f17a5c;
+}
+.coloritable {
+  background-color: #097e7e;
+}
+.colorButtoms {
+  background-color: #ff9c00;
+  border: none;
+}
+.colorButtoms:hover {
+  background-color: #ff9c00;
+  border: none;
+}
+.marginManfi {
+  margin-top: -40px;
+}
+.rtl1 {
+  direction: rtl;
+}
+
+.listItem {
+  text-decoration: none;
+  list-style-type: none;
+}
+.colorButtoms2 {
+  background-color: #da3b20e1;
+  border: none;
+}
+.colorButtoms2:hover {
+  background-color: #ff9c00;
+  border: none;
+}
+
+.landingPage {
+  min-height: 80vh;
+  background-image: url('./image/x.PNG');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: center;
+}
+.landing1 {
+  width: 1365px;
+  height: 535px;
+}
+
+.mrone {
+  margin-right: 150px;
+}
+.mrotwo {
+  margin-left: 150px;
+}
+
+.butonx {
+  margin-left: 170px;
+}
+.mr100 {
+  margin-left: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+  .mr100 {
+    margin-left: 0px;
+  }
+  .spacemore {
+    margin-bottom: 250px;
+  }
+  .mrone {
+    margin-right: 0px;
+  }
+  .mrotwo {
+    margin-left: 0px;
+  }
+
+  .centeralign {
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+  }
+
+  .butonx {
+    display: block;
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+  .butonx1 {
+    display: block;
+    margin-left: 120px;
+    margin-bottom: 50px;
+  }
+  .mbxb {
+    margin-bottom: 100px;
+  }
+  .stylm {
+    margin-left: -80px;
+  }
+  .butonx22 {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+}
+.butonx22 {
+  margin-left: 0px;
+}
