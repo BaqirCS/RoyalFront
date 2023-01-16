@@ -210,13 +210,13 @@ function AddProduct() {
                 />
               </div>
               <div className="form-group col-md-4 rtl1 mb-2">
-                <label htmlFor="newAmount150" className="mb-2">
+                <label htmlFor="newAmount1500" className="mb-2">
                   دریافت کننده
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   className="form-control"
-                  id="newAmount150"
+                  id="newAmount1500"
                   placeholder="شخص دریافت کننده"
                   value={product.receiver}
                   onChange={(e) =>
