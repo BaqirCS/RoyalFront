@@ -18,6 +18,7 @@ function UpdateReservation() {
     partyKind: '',
     status: '',
     time: '',
+    phoneNumber: '',
     date: '',
   });
 
@@ -230,6 +231,30 @@ function UpdateReservation() {
                   <option value="بعد از ظهر">بعد از ظهر</option>
                 </select>
               </div>
+
+              <div className="col-md-2 "></div>
+
+              <div
+                className="form-group col-md-3 rtl1"
+                style={{ marginBottom: '30px' }}
+              >
+                <label htmlFor="phone" className="mb-2">
+                  شماره همراه
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="phone"
+                  placeholder="شمارهمراه"
+                  value={reserve.phoneNumber}
+                  onChange={(e) =>
+                    setReserve({ ...reserve, phoneNumber: e.target.value })
+                  }
+                />
+              </div>
+            </div>
+            <div className="row  mb-3">
+              <div className="col-md-3 rtl1 mrotwo mb-2"></div>
 
               <div className="col-md-2 "></div>
 

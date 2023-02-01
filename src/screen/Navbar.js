@@ -46,9 +46,11 @@ function Navbar() {
                   <Link className="dropdown-item " to="/">
                     موجودی
                   </Link>
-                  <Link className="dropdown-item " to="/newproduct">
-                    اضافه کردن جدید
-                  </Link>
+                  {state.userCredentials.user.status !== 'user' && (
+                    <Link className="dropdown-item " to="/newproduct">
+                      اضافه کردن جدید
+                    </Link>
+                  )}
                 </div>
               </li>
               <li className="nav-item dropdown">
@@ -67,9 +69,11 @@ function Navbar() {
                   <Link className="dropdown-item" to="/input">
                     تمامی ورودی ها
                   </Link>
-                  <Link className="dropdown-item" to="/addinput">
-                    ورودی جدید
-                  </Link>
+                  {state.userCredentials.user.status !== 'user' && (
+                    <Link className="dropdown-item" to="/addinput">
+                      ورودی جدید
+                    </Link>
+                  )}
                 </div>
               </li>
               <li className="nav-item dropdown">
@@ -88,9 +92,11 @@ function Navbar() {
                   <Link className="dropdown-item" to="/output">
                     تمامی خروجی ها
                   </Link>
-                  <Link className="dropdown-item" to="/minusAnbar">
-                    خروجی جدید
-                  </Link>
+                  {state.userCredentials.user.status !== 'user' && (
+                    <Link className="dropdown-item" to="/minusAnbar">
+                      خروجی جدید
+                    </Link>
+                  )}
                 </div>
               </li>
               <li className="nav-item dropdown">

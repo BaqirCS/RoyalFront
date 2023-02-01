@@ -19,6 +19,7 @@ function SingleReservation() {
       time: '',
       partyKind: '',
       status: '',
+      phoneNumber: '',
       _id: '',
     },
   ]);
@@ -40,6 +41,7 @@ function SingleReservation() {
           },
         }
       );
+      console.log(data);
       setItems(data);
       dispatch({ type: 'GET_R_SUCCESS', payload: data });
     } catch (error) {
@@ -108,6 +110,7 @@ function SingleReservation() {
                   <th>صاحب مراسم </th>
                   <th>میهمان</th>
                   <th>نوع مراسم</th>
+                  <th>شماره تماس</th>
                   <th> نوبت</th>
                   <th>حالت</th>
                   <th>تغییر</th>
@@ -121,6 +124,7 @@ function SingleReservation() {
                       <td> {item.requestName}</td>
                       <td>{item.guestNum}</td>
                       <td>{item.partyKind}</td>
+                      <td>{item.phoneNumber}</td>
                       <td>{item.time}</td>
                       <td>{item.status}</td>
                       <td>
